@@ -1,0 +1,104 @@
+:root {
+  --padding: 10px;
+  --odd: rgb(246, 213, 213);
+  --even: rgb(221, 240, 249);
+  --fontsize: 1.3rem;
+  --btn-color: rgb(185, 214, 237);
+}
+
+body {
+  overflow-y: scroll;
+  max-width: 80vw;
+  margin: auto;
+}
+body p {
+  padding: 0;
+  margin: 0;
+}
+body button {
+  padding: var(--padding);
+  background-color: var(--btn-color);
+  font-size: var(--fontsize);
+  border-radius: 6px;
+}
+body main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+body main div {
+  padding: var(--padding);
+  background-color: #ccc;
+  margin: 5px;
+  font-size: var(--fontsize);
+}
+body main div:nth-child(odd) {
+  background-color: var(--odd);
+}
+body main div:nth-child(even) {
+  background-color: var(--even);
+}
+body main aside img {
+  width: 100%;
+}
+body main article .gammel {
+  background-color: var(--odd) !important;
+}
+body main article .ung {
+  background-color: var(--even) !important;
+}
+body main article .odd {
+  background-color: var(--odd) !important;
+}
+body main article .even {
+  background-color: var(--even) !important;
+}
+
+.activities {
+  width: 100%;
+  background-color: #fff;
+}
+.activities tr:nth-child(odd) {
+  background-color: var(--odd);
+}
+.activities tr:nth-child(even) {
+  background-color: var(--even);
+}
+.activities tr td {
+  padding: var(--padding);
+}
+.activities div {
+  padding: var(--padding);
+  flex: 1;
+  text-align: left;
+}
+
+.dot {
+  height: 0.8vw;
+  width: 0.8vw;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -0.2vh;
+}
+
+.brobyg {
+  background-color: #aff0af;
+}
+
+.amu {
+  background-color: #ffcc99;
+}
+
+.web {
+  background-color: #cc99ff;
+}
+
+.grafTek {
+  background-color: #66ccff;
+}
+
+.medieGraf {
+  background-color: #ffc0cb;
+}/*# sourceMappingURL=style.css.map */
